@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Modal from 'react-modal'
 import Dashboard from './components/Dashboard'
 import Header from './components/Header'
+import TransactionsModal from './components/TransactionsModal'
 import TransactionsTable from './components/TransactionsTable'
 import { api } from './services/api'
 import {GlobalStyle} from './styles/global'
@@ -24,13 +25,8 @@ export default function App() {
     <>
     <GlobalStyle />
     <Header onOpenTransactionModal ={handleOpenTransactionModal}/>
-    <Modal 
-      isOpen={isNewTransactionModalOpen}
-      onRequestClose={handleCloseTransactionModal}
-    >
-      <h2>Cadastrar Transação</h2>
+    <TransactionsModal onRequestClose ={handleCloseTransactionModal} isOpen={isNewTransactionModalOpen}/>
 
-    </Modal>
     <Dashboard/>
     <TransactionsTable />
     </>

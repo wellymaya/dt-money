@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { api } from '../../services/api'
 import { Container } from './styles'
 
 export default function index() {
+  const [transactions, setTransactions] = useState([])
   
-
   useEffect(()=> {
     api.get('/trasactions')
-    .then(response => {console.log(response.data)})
+    .then(response => {setTransactions(response.data)})
 
   }, [])
 
@@ -22,6 +22,7 @@ export default function index() {
             <th>Data</th>
           </tr>
         </thead>
+        {}
         <tbody>
           <tr>
             <td>Desenvolvimento de website</td>

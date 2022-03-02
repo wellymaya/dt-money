@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from './styles'
 import Entradas from '../../assets/Entradas.png';
-import Saidas from '../../assets/saidas.png';
+import Saidas from '../../assets/Saidas.png';
 import Total from '../../assets/Total.png';
 
 

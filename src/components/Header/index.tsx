@@ -15,7 +15,6 @@ export default function index({onOpenTransactionModal}: headerProps) {
       <Content>
         <img src= {Logo} alt="logo"/>
         <button type="button" onClick={onOpenTransactionModal}>Nova Transação</button>
-
       </Content>
     </Header>
   )
