@@ -7,7 +7,7 @@ export default function index() {
   
   useEffect(()=> {
     api.get('/trasactions')
-    .then(response => {setTransactions(response.data)})
+    .then(response => console.log(response.data))
 
   }, [])
 

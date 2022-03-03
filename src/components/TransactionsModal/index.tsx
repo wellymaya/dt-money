@@ -5,6 +5,8 @@ import Saidas from '../../assets/Saidas.png';
 import Fechar from '../../assets/Fechar.png';
 import { FormEvent, useState } from 'react';
 
+import {api} from '../../services/api'
+
 interface TransactionsModalProps {
   isOpen: boolean;
   onRequestClose: () => void;
@@ -19,7 +21,15 @@ function TransactionsModal({isOpen, onRequestClose}:TransactionsModalProps) {
   
   function HandleCreateTransaction(event:FormEvent) {
     event.preventDefault();
-    console.log(title, category, type,value)
+    console.log(title, category, type,value);
+
+    const data = {
+      title,
+      value,
+      category,
+      type,
+    }
+    api.post('/transactions', data);
   }
 
   return (

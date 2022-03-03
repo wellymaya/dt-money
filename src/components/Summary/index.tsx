@@ -4,7 +4,6 @@ import Entradas from '../../assets/Entradas.png';
 import Saidas from '../../assets/Saidas.png';
 import Total from '../../assets/Total.png';
 
-
 export default function index() {
   return (
     <Container>
