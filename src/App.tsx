@@ -4,8 +4,8 @@ import Dashboard from './components/Dashboard'
 import Header from './components/Header'
 import TransactionsModal from './components/TransactionsModal'
 import TransactionsTable from './components/TransactionsTable'
-import { api } from './services/api'
 import {GlobalStyle} from './styles/global'
+import { TransactionsContext, TransactionsProvider } from './TransactionsContext'
 
 Modal.setAppElement("#root");
 
@@ -22,13 +22,15 @@ export default function App() {
   }
 
   return (
-    <>
-    <GlobalStyle />
-    <Header onOpenTransactionModal ={handleOpenTransactionModal}/>
-    <TransactionsModal onRequestClose ={handleCloseTransactionModal} isOpen={isNewTransactionModalOpen}/>
+  
+    <TransactionsProvider>
+      <GlobalStyle />
+      <Header onOpenTransactionModal ={handleOpenTransactionModal}/>
+      <TransactionsModal onRequestClose ={handleCloseTransactionModal} isOpen={isNewTransactionModalOpen}/>
 
-    <Dashboard/>
-    <TransactionsTable />
-    </>
+      <Dashboard/>
+      <TransactionsTable />
+    </TransactionsProvider>
+   
   )
 }

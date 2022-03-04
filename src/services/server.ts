@@ -13,7 +13,7 @@ createServer({
         id: 1,
         title: 'Feelance de Website',
         type: 'deposit',
-        category: 'Dev',
+        category: 'Desenvolvimento',
         amount: 400,
         created: new Date('2021-02-12 09:00:00'),
        },
