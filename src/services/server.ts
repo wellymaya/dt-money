@@ -3,16 +3,16 @@ import { createServer, Model } from 'miragejs';
 createServer({
 
   models: {
-    transition: Model,
+    transaction: Model,
   },
   
   seeds(server) {
     server.db.loadData({
-      trasactions: [
+      transactions: [
       {
         id: 1,
         title: 'Feelance de Website',
-        type: 'Deposit',
+        type: 'deposit',
         category: 'Dev',
         amount: 400,
         created: new Date('2021-02-12 09:00:00'),
