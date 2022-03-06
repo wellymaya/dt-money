@@ -11,6 +11,7 @@ export const Container = styled.main`
     padding:1.5rem 2rem;
     border-radius: 0.25rem;
     color: var(--text-ttile);
+    box-shadow: 0 1px #c4c4c4;
 
     header {
     display: flex;
@@ -30,8 +31,4 @@ export const Container = styled.main`
     background-color: var(--green)
   }
   }
-
-  
-
-
 `;

@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   :root {
   --background: #F0F2F5;
   --blue:  #5429CC;
+  --blue-linear-gradient: linear-gradient(135deg, #8626d1 0%,  #5429cc 100%);
   --blue-light: #6933ff;
   --green: #33CC95;
   --red: #E52E4D;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Header = styled.header`
   width: 100vw;
   height: 212px;
-  background-color: var(--blue);
+  background: var(--blue-linear-gradient);
 `;
 
 export const Content = styled.div`

@@ -36,4 +36,7 @@ export const Container = styled.div`
       }
     }
   }
+  .close-button{
+      border: none;
+    }
 `;

@@ -1,6 +1,7 @@
 import { useContext } from 'react'
-import { TransactionsContext } from '../../TransactionsContext';
+import { TransactionsContext } from '../../contexts/TransactionsContext';
 import { Container } from './styles'
+import Fechar from '../../assets/Fechar.png'
 
 export default function index() {
     const {transactions} = useContext(TransactionsContext);
