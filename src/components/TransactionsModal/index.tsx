@@ -6,7 +6,7 @@ import Fechar from '../../assets/Fechar.png';
 import { FormEvent, useContext, useState } from 'react';
 
 import {api} from '../../services/api'
-import { TransactionsContext } from '../../TransactionsContext';
+import { TransactionsContext } from '../../contexts/TransactionsContext'
 
 interface TransactionsModalProps {
   isOpen: boolean;
